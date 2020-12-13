@@ -6,21 +6,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/ll_display"
+    <LinearLayout
+        android:id="@+id/ll_display_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight=".2"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-        <include
-            layout="@layout/layout_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
-
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/ll_keypad"
@@ -36,7 +31,7 @@
             android:scrollbars="vertical">
 
             <RelativeLayout
-                android:id="@+id/ll_row_1"
+                android:id="@+id/keyboard_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_rectangle"
@@ -87,7 +82,7 @@
                     android:layout_below="@+id/row2"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/left_home_row_2" />
+                    android:src="@drawable/left_resting_hand" />
 
                 <ImageView
                     android:id="@+id/img_right"
@@ -95,12 +90,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/row2"
                     android:layout_toRightOf="@+id/img_left"
-                    android:layout_marginLeft="110dp"
+                    android:layout_marginLeft="100dp"
                     android:src="@drawable/right_home_row_2" />
-
             </RelativeLayout>
         </ScrollView>
-
     </RelativeLayout>
 
 </LinearLayout>

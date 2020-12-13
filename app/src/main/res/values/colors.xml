@@ -17,4 +17,6 @@
     <color name="black_70">#B3000000</color>
     <color name="grey">#d8d8d8</color>
     <color name="blue">#276792</color>
+    <color name="red">#ba0303</color>
+    <color name="text_selected">#33b5cc1b</color>
 </resources>

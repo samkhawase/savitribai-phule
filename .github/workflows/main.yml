@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build step
-      uses: actions/savitribai-phule@v1
+      uses: actions/savitribai-phule@v2
       with: 
         name: Build Job
 

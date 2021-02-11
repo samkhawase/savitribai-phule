@@ -5,7 +5,6 @@ inputs:
 runs:
   using: "composite"
   steps: 
-    - uses: actions/checkout@v1
     - name: set up JDK 1.8
       uses: actions/setup-java@v1
       with:

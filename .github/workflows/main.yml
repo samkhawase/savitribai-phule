@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - id: Build step
+    - id: Build
       uses: actions/savitribai-phule@v1
       with: 
         name: Build Job
